@@ -1,0 +1,71 @@
+.user-setting_content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        // font-family: 'SVN-Gilroy_Regular';
+        // font-size: 14px;
+        font-family: 'SVN-Gilroy_SemiBold';
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+.user-setting_option1 {
+    height: 35px;
+    >a {
+        line-height: 35px;
+    }
+    .user-setting_menu {
+        display: none;
+    }
+    position: relative;
+}
+
+.user-setting_option1:hover .user-setting_menu {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 0;
+
+    background: #FFF;
+    padding: 0;
+    min-width: 170px;
+    box-shadow: 0px 3px 25px 0px rgba(31,38,67,0.1);
+    -o-box-shadow: 0px 3px 25px 0px rgba(31,38,67,0.1);
+    -moz-box-shadow: 0px 3px 25px 0px rgba(31,38,67,0.1);
+    -webkit-box-shadow: 0px 3px 25px 0px rgba(31,38,67,0.1);
+}
+.user-setting_option1:hover >a{
+    color: #fcaf17;
+}
+.user-setting_item {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    padding: 0 10px;
+    margin-bottom: 5px;
+    a {
+        margin: 0;
+        display: block;
+        padding: 5px;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.user-setting_item--top a {
+    border-bottom: 1px #dde1ef solid;
+    padding: 10px 0;
+    color: #fcaf17;
+}
+.user-setting_item--bottom a {
+    border-top: 1px #dde1ef solid;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}

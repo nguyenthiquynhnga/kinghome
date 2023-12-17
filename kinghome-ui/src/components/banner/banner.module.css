@@ -1,0 +1,8 @@
+.banner_home {
+    margin-bottom: 24px;
+}
+.banner_home__image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}

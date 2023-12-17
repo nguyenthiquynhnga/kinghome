@@ -1,0 +1,39 @@
+{
+  "name": "kinghome-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/material": "^5.14.20",
+    "bootstrap": "^5.3.2",
+    "moment": "^2.29.4",
+    "next": "14.0.4",
+    "next-images": "^1.8.5",
+    "next-transpile-modules": "^10.0.1",
+    "react": "^18",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "^18",
+    "react-router-dom": "^6.20.1",
+    "react-slick": "^0.29.0",
+    "reactstrap": "^9.2.1",
+    "sass": "^1.69.5",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.12",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,18 @@
+.modalbanner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    z-index: 999;
+}
+
+
+
+.modalbanner__button-close {
+    position: fixed;
+    top: 2px;
+    right: 2px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.slider-show-root {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    button {
+        color: #505050;
+        padding-left: 0;
+        padding-right: 0;
+        &:hover{
+            background-color: rgba(253, 151, 7, 0.5);
+        }
+    }
+}
+.slide-show-root__image {
+    img {
+        box-shadow: 0 0 2px 1px rgba(103, 102, 102, 0.5);
+        border-radius: 5px;
+    }
+}

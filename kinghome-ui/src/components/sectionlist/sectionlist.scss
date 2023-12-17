@@ -1,0 +1,137 @@
+.section-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.section-list__top {
+    height: 64px;
+    width: 100%;
+    margin-bottom: 15px;
+
+    .section-list__top__detail {
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+        display: block;
+        align-items: center;
+
+        .section-list__top__item {
+            display: inline-block;
+            text-align: center;
+            box-sizing: border-box;
+            height: 43px;
+            width: 220px;
+            margin-right: 50px;
+            font-family: 'SVN-Gilroy_SemiBold';
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-bottom: 2px solid #97A0AD;
+            ;
+            color: #97A0AD;
+            ;
+
+            &:hover {
+                border-bottom: 2px solid #FCAF17;
+                color: #FCAF17;
+            }
+        }
+
+        .category_active {
+            border-bottom: 2px solid #FCAF17;
+            color: #FCAF17;
+        }
+    }
+}
+
+
+.section-list__bottom__item {
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+        transform: scale(1.1);
+
+        img {
+            box-shadow: 0px 5px 10px 0px rgba(76, 76, 75, 0.378)
+        }
+
+        .section-list__bottom--name span {
+            color: #FCAF17;
+        }
+    }
+}
+
+.section-list__bottom--image {
+    margin-bottom: 20px;
+    padding-top: 10px;
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+    }
+}
+
+.section-list__bottom--name {
+    text-align: center;
+    padding-bottom: 10px;
+
+    span {
+        text-transform: uppercase;
+        font-family: 'SVN-Gilroy_SemiBold';
+        font-size: 14px;
+        font-weight: 600;
+        color: #11006F;
+    }
+}
+
+
+.slick-prev::before,
+.slick-next::before {
+    content: none;
+}
+
+.slick-next,
+.slick-prev {
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.slick-next {
+    background-image: url('https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/icon-next-danhmuc.svg');
+
+}
+
+.slick-prev {
+    background-image: url('https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/icon-prev-danhmuc.svg');
+}
+
+.slick-next:hover, .slick-next:focus {
+    background-image: url('https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/icon-next-danhmuc.svg');
+    background-size: cover;
+}
+.slick-next:hover {
+    box-shadow: 0 0 12px 1px rgba(63, 63, 63, 0.541);
+}
+
+.slick-prev:hover,
+.slick-prev:focus {
+    background-image: url('https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/icon-prev-danhmuc.svg');
+    background-size: cover;
+}
+
+.slick-prev:hover {
+    box-shadow: 0 0 12px 1px rgba(63, 63, 63, 0.541);
+}
+
+.slick-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
