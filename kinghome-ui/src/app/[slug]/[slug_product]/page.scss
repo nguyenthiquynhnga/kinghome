@@ -1,0 +1,226 @@
+.product-detail-wrapper {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+
+    .product-detail__left {
+        flex: 2;
+        
+
+        .product-detail__left__images {
+            display: grid;
+            grid-template-columns: auto auto;
+
+            .product-detail__left__images__item {
+                height: min-content;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            margin-bottom: 20px;
+        }
+        .product-detail__left__post{
+            margin-bottom: 20px;
+        }
+        .product-detail__left__review {
+            padding-left: 10px;
+            .review-title {
+                font-size: 18px;
+                font-family: 'SVN-Gilroy Med';
+                margin-bottom: 20px;
+            }
+            .review-rate {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                background-color: #F2F2F2;
+                border-bottom: 1px solid #c4cdd5;
+                margin-bottom: 20px;
+                .review-num-star__num {
+                    font-family: 'SVN-Gilroy Bold';
+                    font-size: 22px;
+                    color: #030d78;
+                    margin-bottom: 10px;
+                }
+                .review-num-star__image {
+                    margin-bottom: 10px;
+                }
+                .review-num {
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                    color: #212b35;
+                }
+
+                .review-button {
+                    border: 1px solid #08f;
+                    background: #08f;
+                    box-sizing: border-box;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    color: #fff;
+                    height: 36px;
+                    line-height: 36px;
+                    padding: 0 17px;
+                    min-width: 180px;
+                    background-color: #030d78;
+                    border-color: #030d78;
+                }
+            }
+        }
+    }
+
+    .product-detail__right {
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        flex: 1;
+
+        .product-detail__name {
+            font-family: 'SVN-Gilroy Med';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 32px;
+            text-transform: capitalize;
+            color: #17191C;
+        }
+
+        .product-review-star {
+            // font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .product-detail-price {
+            .product-price {
+
+                .price-current {
+                    font-weight: 600;
+                    font-size: 30px;
+                    font-family: 'SVN-Gilroy Bold';
+                    color: #CD151C;
+                    line-height: 38px;
+                    margin-right: 10px;
+
+                }
+
+                .price-old {
+                    font-weight: 500;
+                    font-size: 20px;
+                    text-decoration: line-through;
+                    color: #D2D2D2;
+                    line-height: 38px;
+                    text-align: center;
+                }
+            }
+
+            .discount-tag {
+                span:nth-child(1) {
+                    margin-left: 3px;
+                    color: #646568;
+                    font-size: 16px;
+                    font-family: 'SVN-Gilroy Bold';
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                }
+
+                span:nth-child(2) {
+                    margin-left: 8px;
+                    width: 49px;
+                    font-family: 'SVN-Gilroy Bold';
+                    display: inline-block;
+                    text-align: center;
+                    color: #646568;
+                    background: #FCAF17;
+                    border-radius: 4px;
+                    height: 22px;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px;
+                }
+            }
+        }
+
+
+
+        .product-detail-attribute {
+            .product-detail-attribute__box {
+                margin-bottom: 25px;
+                font-size: 15px;
+
+                .attribute-title {
+                    font-family: 'SVN-Gilroy Bold';
+                    font-weight: 800;
+                    color: #282828;
+                    margin-bottom: 12px;
+                }
+
+                .attribute-content {
+                    margin-left: 8px;
+                    color: #434343;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        .product-detail-note {
+            font-style: italic;
+            font-size: 12px;
+            color: #434343;
+        }
+
+        .product-detail-contact-button {
+            a {
+                text-decoration: none;
+                text-align: center;
+                background: #fcaf17;
+                border: none;
+                color: #FFF;
+                width: 90%;
+                margin: 20px auto;
+                border-radius: 4px;
+                display: block;
+                font-family: 'SVN-Gilroy Med';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                letter-spacing: 1px;
+                line-height: 40px;
+                text-transform: capitalize;
+                box-shadow: 0px 3px 0px 0px #CA8C12 !important;
+                height: 40px;
+                max-width: 400px;
+
+                &:hover {
+                    background-color: #FDC75D;
+                }
+
+                transition: all 0.3s;
+            }
+
+            .infor_promotion {
+                p {
+                    // font-style: italic;
+                    margin-left: 8px;
+                    color: #434343;
+                    margin-bottom: 12px;
+                    font-size: 12px;
+                }
+
+            }
+        }
+    }
+}
+
+.line {
+    height: 1px;
+    background-color: rgba(255, 157, 0, 0.148);
+    width: 30%;
+    // padding: 0 10px;
+    box-sizing: border-box;
+    margin: 30px 0;
+}

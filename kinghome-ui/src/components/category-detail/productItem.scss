@@ -1,0 +1,110 @@
+.product-item-wrapper {
+    width: 100%;
+    height: max-content;
+
+    .product-item__image {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            transition: all 0.4s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .product-item__tag-left {
+            position: absolute;
+            top: 0px;
+            font-size: 12px;
+            line-height: 1;
+            padding: 5px 10px;
+            font-family: 'SVN-Gilroy Med';
+            // font-weight: 600;
+            z-index: 9;
+            color: #fff;
+            background: #CD151C;
+        }
+
+        .product-item__tag-right {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+
+            .hot-tag {
+                background: url('https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/hotico.svg?1703140134381') left center no-repeat;
+                width: 30px;
+                height: 30px;
+                display: block;
+                background-size: 30px;
+            }
+        }
+    }
+
+    .product-item__name {
+        margin-top: 5px;
+
+        >a {
+            text-decoration: none;
+            font-family: 'SVN-Gilroy Med';
+            font-size: 14px;
+            text-transform: capitalize;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.5px;
+            color: #000;
+
+            &:hover {
+                color: #fd9707
+            }
+        }
+    }
+
+    .product-item__price {
+        margin-top: 10px;
+
+        span:nth-child(1) {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20.8px;
+            font-family: 'SVN-Gilroy Med';
+            margin-right: 10px;
+        }
+
+        span:nth-child(2) {
+            text-decoration: line-through;
+            position: relative;
+            font-size: 14px;
+            color: #8A8A8F;
+            font-family: 'SVN-Gilroy Med';
+        }
+    }
+
+    .product-item__list-icon {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        .product-item__list-icon__item {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid transparent;
+            cursor: pointer;
+
+            &:hover {
+                border: 1px solid #fd9707;
+            }
+        }
+
+        .icon-active {
+            transform: scale(0.9);
+            border: 1px solid #fd9707;
+        }
+    }
+}

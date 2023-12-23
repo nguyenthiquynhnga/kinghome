@@ -4,6 +4,7 @@ import "./page.scss"
 import styles from "./page.module.css"
 import { ICategoryDetail } from "@/types/Category"
 import React from "react"
+import CategoryDetail from "@/components/category-detail/categoryDetail"
 type Props = {
   params: { slug: string }
 }
@@ -71,7 +72,7 @@ export default async function CategoryPage({
             <span>{dataFetch.categoryList.name}</span>
           </div>
           <div className="category-detail__content">
-
+              <CategoryDetail data={dataFetch}/>
           </div>
         </div>
       </div>
@@ -84,7 +85,7 @@ const data = {
   banner: {
     url: 'https://bizweb.dktcdn.net/100/438/408/files/quan-au-nu-1b081911-63de-4a73-8838-4e466f1660d0.jpg?v=1676861572286'
   },
-  post: `<div class="coll-desc open" style="height: 110px; padding-bottom: 0px;">
+  post: `
   <h1 class="collectiontitle d-none">Quần nam</h1>
   <p><em><strong>YODY xin giới thiệu đến bạn 7 kiểu quần nam, quần <a href="https://yody.vn/nam"><span style="color:#3498db;">thời trang nam</span></a> phổ biến nhất 2023. Đây là những kiểu quần nam ăn khách, không bao giờ lỗi mốt&nbsp;và là kiểu quần nhất định bạn có phải trong tủ đồ.&nbsp; Hãy cùng tham khảo để bổ sung ngay cho tủ quần áo của mình những chiếc quần từ cửa hàng của YODY nhé!</strong></em></p>
   <h2>1. Các mẫu quần dài nam nhất định phải sở hữu</h2>
@@ -134,7 +135,7 @@ const data = {
   <h2>3. Mua quần cho nam ở đâu?</h2>
   <p><strong><a href="https://yody.vn"><span style="color:#3498db;">YODY</span></a></strong> đã đề cập đến 7 mẫu <strong><a href="https://yody.vn/quan-nam"><span style="color:#3498db;">quần nam</span></a></strong> không thể thiếu trong tủ đồ của phái mạnh. Băn khoăn duy nhất còn tồn đọng có lẽ là nơi mua được những mẫu quần này mà mẫu mã phải chất lượng. YODY tự tin là thương hiệu thời trang lâu đời với những sản phẩm tự sản xuất, tự thiết kế có chất lượng rất tốt. Những mẫu quần nam tại YODY chắc chắn sẽ giải quyết được những nhu cầu của bạn.</p>
   <p>Để có thể sở hữu 7 mẫu quần trên, bạn hãy&nbsp;ra thử trực tiếp tại&nbsp;<strong><a href="https://yody.vn/he-thong-cua-hang"><span style="color:#3498db;">cửa hàng của YODY</span></a></strong>, các nhân viên tư vấn sẽ giúp bạn chọn mẫu quần ưng ý nhất. Trong trường hợp bạn không thể ra được cửa hàng thì có thể đặt hàng online, YODY sẽ nhận tư vấn online nếu bạn cần. Ngoài ra khi bạn đặt hàng online có thể sẽ nhận được rất nhiều ưu đãi khác như giảm giá, miễn phí vận chuyển,... YODY chắc chắn&nbsp;sẽ rất vui khi nhận được sự tin tưởng, tin dùng sản phẩm của bạn.</p>
-  <a href="javascript:;" class="view-more"><span>Thu gọn <img src="//bizweb.dktcdn.net/100/438/408/themes/931909/assets/more_filter.svg?1702693459815" alt="more"></span></a></div>`,
+  `,
   category: {
     id: 2,
     level: 2,
@@ -155,7 +156,7 @@ const data = {
         children: [
           {
             id: 3,
-            name: 'Nhà vườn cấp 4-Nhà một tầng',
+            name: 'Nhà vườn cấp 4',
             level: 3,
             type: 'category'
           },
@@ -193,7 +194,7 @@ const data2 = {
   banner: {
     url: 'https://bizweb.dktcdn.net/100/438/408/files/quan-short-nam-d0f10788-e775-4d1a-9fdb-c71f1285b950.jpg?v=1676618629042'
   },
-  post: `<div class="coll-desc open" style="height: 110px; padding-bottom: 0px;">
+  post: `
   <h1 class="collectiontitle d-none">Quần short nam</h1>
   <p><em><strong>Hè vừa sang là những mẫu quần short nam lại được dịp lên ngôi. Item có thể diện đi chơi, đi du lịch, tập thể thao,...nên rất được lòng cánh mày râu. Vậy, quần short nam là gì? Mua quần short nam ở đâu? Cùng YODY giải đáp ngay những vấn đề nan giải sau đây nhé!</strong></em></p>
   <p><meta charset="utf-8"></p>
@@ -322,7 +323,7 @@ const data2 = {
   <p dir="ltr">Hiện nay những chiếc <strong><a href="https://yody.vn/quan-short"><span style="color:#3498db;">quần short</span></a></strong> nam thương hiệu YODY không những đem lại sự thoải mái, năng động khi sử dụng còn phù hợp với tất cả dáng người. Thiết kế trẻ trung, năng động nên rất thích hợp cho các hoạt động khi đi cafe, hẹn hò thậm chí là mặc ở nhà. Quần short nam YODY luôn được khách hàng tin tưởng và sử dụng. Đây chính là dòng sản phẩm không thể thiếu trong tủ độ và là outfit phù hợp với những anh chàng yêu thích sự đơn giản, năng động.</p>
   <p dir="ltr">Hy vọng với bài viết mà <strong><a href="https://yody.vn/"><span style="color:#3498db;">YODY</span></a></strong> vừa chia sẻ, các chàng đã có thể trả lời được ngay câu hỏi “mua quần short nam ở đâu” rồi đúng không nào? Nếu bạn đang băn khoăn về việc chọn quần short hợp với gu thời trang cũng như các công việc thường ngày của bạn thì bạn có thể đến&nbsp;<strong><a href="https://yody.vn/he-thong-cua-hang">cửa hàng YODY</a></strong>&nbsp;gần nhất để nhận tư vấn và mặc thử.</p>
   <p dir="ltr">Tốt nhất trước khi đến và thử những chiếc&nbsp;<strong><a href="https://yody.vn/quan-short-nam">quần short</a></strong>&nbsp;tại cửa hàng thì bạn sẽ muốn đi&nbsp;một đôi giày ưu thích của mình để dễ chọn đồ nhất.</p>
-  <a href="javascript:;" class="view-more"><span>Thu gọn <img src="//bizweb.dktcdn.net/100/438/408/themes/931909/assets/more_filter.svg?1702693459815" alt="more"></span></a></div>`,
+  <a href="javascript:;" class="view-more"><span>Thu gọn <img src="//bizweb.dktcdn.net/100/438/408/themes/931909/assets/more_filter.svg?1702693459815" alt="more"></span></a>`,
   category: {
     id: 26,
     name: 'Tủ Lavabo',
@@ -348,15 +349,15 @@ const data2 = {
         type: 'category'
       }
     ],
-    images: [{
-      url: 'https://gooccho.vn/wp-content/uploads/2013/11/thiet-ke-noi-that-phong-bep-dep-2020-2.jpg',
-      width: 275,
-      height: 183
-    }, {
-      url: 'https://noithatlacgia.vn/wp-content/uploads/2022/03/slide-noithatlacgia-6.jpg',
-      width: 275,
-      height: 183
-    }]
+    // images: [{
+    //   url: 'https://gooccho.vn/wp-content/uploads/2013/11/thiet-ke-noi-that-phong-bep-dep-2020-2.jpg',
+    //   width: 275,
+    //   height: 183
+    // }, {
+    //   url: 'https://noithatlacgia.vn/wp-content/uploads/2022/03/slide-noithatlacgia-6.jpg',
+    //   width: 275,
+    //   height: 183
+    // }]
 
   }
 }

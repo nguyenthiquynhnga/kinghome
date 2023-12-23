@@ -6,7 +6,9 @@ import BannerHome from '@/components/banner/bannerhome';
 import SectionList from '@/components/sectionlist/sectionlist';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import numeral from 'numeral';
 export default function Home() {
+  
   return (
     <main className={styles.main}>
       <div className={styles.content_container}>

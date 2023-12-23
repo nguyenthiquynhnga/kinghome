@@ -1,0 +1,9 @@
+.main {
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.content_container {
+    width: 70%;
+}

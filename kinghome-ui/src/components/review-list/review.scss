@@ -1,0 +1,68 @@
+.icon-useful {
+    width: 16px;
+    height: 16px;
+    vertical-align: top;
+    margin-right: 5px;
+    color: #030d78;
+}
+
+.review-list__item {
+    padding-left: 20px;
+    color: #212b35;
+    font-size: 14px;
+    font-family: 'SVN-Gilroy Med';
+
+    .review-list__item__name {
+        p {
+            display: inline;
+            font-family: 'SVN-Gilroy Bold';
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        margin-bottom: 12px;
+    }
+
+    .review-list__item__content {
+        padding-left: 3px;
+        margin-bottom: 12px;
+    }
+
+    .review-list__item__option {
+        padding-left: 3px;
+        margin-bottom: 20px;
+
+        .option__feedback {
+            background: none;
+            border: none;
+            color: #030d78;
+            font-size: 14px;
+            font-family: 'SVN-Gilroy Med';
+        }
+
+        .option__like {
+            background: none;
+            border: none;
+            color: #030d78;
+            font-size: 14px;
+            font-family: 'SVN-Gilroy Med';
+            margin-left: 10px;
+        }
+    }
+
+    .review-list__item__image {
+        padding-left: 3px;
+        display: flex;
+        flex-direction: row;
+
+        .image-review-item {
+            max-width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        margin-bottom: 20px;
+    }
+}

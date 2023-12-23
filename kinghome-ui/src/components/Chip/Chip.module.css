@@ -1,0 +1,38 @@
+.chip_selected {
+    width: max-content;
+    border: 1px solid #fd9707;
+    color: #7A7A9D;
+    padding: 0px 5px;
+    border-radius: 5%;
+    position: relative;
+}
+.chip_selected::after {
+    content: '';
+    background: url(https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/chose.svg);
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: -1px;
+    right: -1px;
+    transform: initial;
+}
+
+.chip_default {
+    color: #7A7A9D;
+    background-color: #F2F2F2;
+    width: max-content;
+    padding: 0px 8px;
+    border: 1px solid transparent;
+    border-radius: 5%;
+}
+
+.chip_default:hover {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #fd9707;
+    color: #fd9707;
+}
+.chip_selected:hover {
+    cursor: pointer;
+    color: #fd9707;
+}
