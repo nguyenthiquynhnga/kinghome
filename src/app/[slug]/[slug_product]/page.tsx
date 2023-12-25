@@ -58,10 +58,11 @@ async function getData({ params }: Props): Promise<TData> {
     // return res.json()
 }
 
-const CategoryPage: React.FC<{
-    params: { slug: string|'1', slug_product: string|'1' },
-    children: React.ReactNode
-  }> = async ({ params, children }) => {
+export default async function CategoryPage({
+    params
+}: {
+    params: { slug: string, slug_product: string }
+}) {
     // sử dụng cơ chế fetch data trêm server component:
     // không sử dụng useEffect, sẽ bị chậm
     // https://youtu.be/EnzPVKoz4nc?t=2275
@@ -76,7 +77,7 @@ const CategoryPage: React.FC<{
                     <div className="product-detail__left">
                         <div className="product-detail__left__images">
                             {dataFetch.product.images.map((item) => (
-                                <div className="product-detail__left__images__item" key={item.url}><Image src={item.url} width={item.width} height={item.height} layout="responsive" alt="image" /></div>
+                                <div className="product-detail__left__images__item"><Image src={item.url} width={item.width} height={item.height} layout="responsive" alt="image" /></div>
                             ))}
                         </div>
                         <div className="product-detail__left__post" dangerouslySetInnerHTML={{ __html: dataFetch.product.post ?? '' }}></div>
@@ -130,7 +131,7 @@ const CategoryPage: React.FC<{
                                 <p className="attribute-title">{dataFetch.product.tag1}:</p>
                                 {
                                     dataFetch.product.value1.split('&').map((value) => (
-                                        <p className="attribute-content" key={value}>- {value}</p>
+                                        <p className="attribute-content">- {value}</p>
                                     ))
                                 }
                             </div>
@@ -140,7 +141,7 @@ const CategoryPage: React.FC<{
                                     <p className="attribute-title">{dataFetch.product.tag2}:</p>
                                     {
                                         dataFetch.product.value2.split('&').map((value) => (
-                                            <p className="attribute-content" key={value}>- {value}</p>
+                                            <p className="attribute-content">- {value}</p>
                                         ))
                                     }
                                 </div>
@@ -152,7 +153,7 @@ const CategoryPage: React.FC<{
                                     <p className="attribute-title">{dataFetch.product.tag3}:</p>
                                     {
                                         dataFetch.product.value3.split('&').map((value) => (
-                                            <p className="attribute-content" key={value}>- {value}</p>
+                                            <p className="attribute-content">- {value}</p>
                                         ))
                                     }
                                 </div>
@@ -180,7 +181,7 @@ const CategoryPage: React.FC<{
         </main>
     )
 }
-export default CategoryPage;
+
 const data = {
     id: 1,
     name: 'Thiết kế biệt thự Ninh Bình - Phong cách Indochine1',
