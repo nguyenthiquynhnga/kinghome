@@ -229,7 +229,7 @@ const SectionList = () => {
 
           {
             categoryList?.map((category, index) => (
-              <div className={indexCategory === index ? "section-list__top__item category_active" : "section-list__top__item"} onClick={() => handleChooseCategory(category, index)}>{category.name}</div>
+              <div key={category.id} className={indexCategory === index ? "section-list__top__item category_active" : "section-list__top__item"} onClick={() => handleChooseCategory(category, index)}>{category.name}</div>
             ))
           }
         </div>

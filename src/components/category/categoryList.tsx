@@ -548,7 +548,7 @@ const CategoryList = () => {
             <ul>
                 {
                     categoryList.map((category: ICategoryItem) => (
-                        <CategoryItem category={category} />
+                        <CategoryItem category={category} key={category.id} />
                     ))
                 }
             </ul>

@@ -30,7 +30,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({ onSelectedCategoryItem,
                         <div className="filter-items-selected__list">
                             {
                                 selectedCategoryList.map((category, index) => (
-                                    <div className="filter-items-selected__item">
+                                    <div className="filter-items-selected__item" key={category.id}>
                                         <Chip
                                             sx={{
                                                 borderRadius: '3px',

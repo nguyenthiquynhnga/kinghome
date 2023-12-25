@@ -43,7 +43,7 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
             </div>
             <div className="product-item__list-icon">
                 {product.images.map((iconImage, index) => (
-                    <div className={`product-item__list-icon__item ${iconImage.url === urlImage ? 'icon-active' : ''}`} onClick={() => setUrlImage(iconImage.url)}><Image src={iconImage.url} width={30} height={30} alt="icon-image" /></div>
+                    <div key={iconImage.url} className={`product-item__list-icon__item ${iconImage.url === urlImage ? 'icon-active' : ''}`} onClick={() => setUrlImage(iconImage.url)}><Image src={iconImage.url} width={30} height={30} alt="icon-image" /></div>
                 ))}
             </div>
         </div>

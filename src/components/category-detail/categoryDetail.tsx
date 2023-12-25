@@ -85,7 +85,7 @@ const CategoryDetail: React.FC<CategoryDetailProps> = ({ data }) => {
                 </div>
                 <div className="product-list__content">{
                     dataFake.products.map((product, index) => (
-                        <div className="product-list-item"><ProductItem product={product} /></div>
+                        <div className="product-list-item" key={product.id}><ProductItem product={product} /></div>
                     ))
                 }</div>
                 <div className="product-list__suggestion">Có thể bạn sẽ thích</div>
