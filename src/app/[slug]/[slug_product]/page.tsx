@@ -58,13 +58,10 @@ async function getData({ params }: Props): Promise<TData> {
     // return res.json()
 }
 
-export default async function CategoryPage({
-    params,
-    children,
-}: {
+const CategoryPage: React.FC<{
     params: { slug: string, slug_product: string },
     children: React.ReactNode
-}) {
+  }> = async ({ params, children }) => {
     // sử dụng cơ chế fetch data trêm server component:
     // không sử dụng useEffect, sẽ bị chậm
     // https://youtu.be/EnzPVKoz4nc?t=2275
@@ -183,7 +180,7 @@ export default async function CategoryPage({
         </main>
     )
 }
-
+export default CategoryPage;
 const data = {
     id: 1,
     name: 'Thiết kế biệt thự Ninh Bình - Phong cách Indochine1',
