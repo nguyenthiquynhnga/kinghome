@@ -64,7 +64,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({ onSelectedCategoryItem,
                     {
                         categoryList.children?.map((category, index) => (
                             <>
-                                <div className="filter-category-list__item">
+                                <div className="filter-category-list__item" key={category.id}>
                                     {selectedCategoryList.some(item => item.id === category.id) ?
                                         <ChipCustom handleSelect={() => onSelectedCategoryItem(category)} label={category.name} selected={selectedCategoryList.some(item => item.id === category.id)}
                                         />
@@ -73,7 +73,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({ onSelectedCategoryItem,
                                         />}
                                 </div>
                                 {category.children && category.children?.length > 0 ? category.children?.map((category2, index) => (
-                                    <div className="filter-category-list__item">
+                                    <div className="filter-category-list__item" key={category2.id}>
                                         {selectedCategoryList.some(item => item.id === category2.id) ?
                                             <ChipCustom handleSelect={() => onSelectedCategoryItem(category2)} label={category2.name} selected={selectedCategoryList.some(item => item.id === category2.id)}
                                             />
