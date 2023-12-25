@@ -77,7 +77,7 @@ export default async function CategoryPage({
                     <div className="product-detail__left">
                         <div className="product-detail__left__images">
                             {dataFetch.product.images.map((item) => (
-                                <div className="product-detail__left__images__item"><Image src={item.url} width={item.width} height={item.height} layout="responsive" alt="image" /></div>
+                                <div className="product-detail__left__images__item" key={item.url}><Image src={item.url} width={item.width} height={item.height} layout="responsive" alt="image" /></div>
                             ))}
                         </div>
                         <div className="product-detail__left__post" dangerouslySetInnerHTML={{ __html: dataFetch.product.post ?? '' }}></div>
@@ -94,7 +94,7 @@ export default async function CategoryPage({
                             </div>
                             <div className="review-list">
                                 {dataFetch.review.list_review ? dataFetch.review.list_review.map((review) => (
-                                    <Review key={review.name} review={review} />
+                                    <Review key={review.name} review={review}/>
                                 )) : 'Chưa có đánh giá nào'}
                             </div>
                         </div>
@@ -131,7 +131,7 @@ export default async function CategoryPage({
                                 <p className="attribute-title">{dataFetch.product.tag1}:</p>
                                 {
                                     dataFetch.product.value1.split('&').map((value) => (
-                                        <p className="attribute-content">- {value}</p>
+                                        <p className="attribute-content" key={value}>- {value}</p>
                                     ))
                                 }
                             </div>
@@ -141,7 +141,7 @@ export default async function CategoryPage({
                                     <p className="attribute-title">{dataFetch.product.tag2}:</p>
                                     {
                                         dataFetch.product.value2.split('&').map((value) => (
-                                            <p className="attribute-content">- {value}</p>
+                                            <p className="attribute-content" key={value}>- {value}</p>
                                         ))
                                     }
                                 </div>
@@ -153,7 +153,7 @@ export default async function CategoryPage({
                                     <p className="attribute-title">{dataFetch.product.tag3}:</p>
                                     {
                                         dataFetch.product.value3.split('&').map((value) => (
-                                            <p className="attribute-content">- {value}</p>
+                                            <p className="attribute-content" key={value}>- {value}</p>
                                         ))
                                     }
                                 </div>
