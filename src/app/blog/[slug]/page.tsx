@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 
 return {
     slug:'1',
-    slug_product:2
+    slug_product:'2'
 }
 }
 
