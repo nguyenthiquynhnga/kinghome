@@ -59,7 +59,7 @@ async function getData({ params }: Props): Promise<TData> {
 }
 
 const CategoryPage: React.FC<{
-    params: { slug: string, slug_product: string },
+    params: { slug: string|'1', slug_product: string|'1' },
     children: React.ReactNode
   }> = async ({ params, children }) => {
     // sử dụng cơ chế fetch data trêm server component:
