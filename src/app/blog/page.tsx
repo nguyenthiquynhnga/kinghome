@@ -22,11 +22,7 @@ async function getData(): Promise<IBlog[]> {
 
   // return res.json()
 }
-export default async function BlogPage({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default async function BlogPage() {
   // sử dụng cơ chế fetch data trêm server component:
   // không sử dụng useEffect, sẽ bị chậm
   // https://youtu.be/EnzPVKoz4nc?t=2275
