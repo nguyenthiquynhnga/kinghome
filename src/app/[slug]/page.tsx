@@ -50,11 +50,8 @@ async function getData({ params }: Props): Promise<ICategoryDetail> {
 
 export default async function CategoryPage({
   params,
-  children,
 }: {
-  params: { slug: string },
-  children: React.ReactNode
-}) {
+  params: { slug: string }}) {
   // sử dụng cơ chế fetch data trêm server component:
   // không sử dụng useEffect, sẽ bị chậm
   // https://youtu.be/EnzPVKoz4nc?t=2275
