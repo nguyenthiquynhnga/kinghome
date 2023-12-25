@@ -40,7 +40,7 @@ export default async function BlogPage({
           <div className="blog-list">
             {
               dataFetch.map((blog) => (
-                <div className="blog-item">
+                <div className="blog-item" key={blog.id}>
                   <div className="blog-item__image"><Image src={blog.image.url} width={480} height={300} layout="responsive" alt="image" /></div>
                   <div className="blog-item__detail">
                     <div className="blog-item__title"><Link href={`/blog/${blog.id}`}>{blog.title}</Link></div>

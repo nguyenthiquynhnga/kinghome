@@ -38,7 +38,7 @@ const Review: React.FC<ReviewProps> = ({ review }) => {
             {review.images ?
                 <div className="review-list__item__image">
                     {review.images.map((image) => (
-                        <div className="image-review-item"><Image src={image.url} width={image.width ?? 100} height={80} layout="responsive" alt="image review" /></div>
+                        <div className="image-review-item" key={image.url}><Image src={image.url} width={image.width ?? 100} height={80} layout="responsive" alt="image review" /></div>
                     ))}
                 </div>
                 : ''}
