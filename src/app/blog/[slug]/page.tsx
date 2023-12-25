@@ -3,10 +3,8 @@ import React from "react"
 
 export default async function BlogPage({
     params,
-    children,
 }: {
-    params: { slug: string, slug_product: string },
-    children: React.ReactNode
+    params: { slug: string, slug_product: string }
 }) {
     // sử dụng cơ chế fetch data trêm server component:
     // không sử dụng useEffect, sẽ bị chậm
