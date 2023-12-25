@@ -45,15 +45,15 @@ const Review: React.FC<ReviewProps> = ({ review }) => {
             {openFeedback === true ?
                 <div className="feedback-box">
                     <div className="feedback-info">
-                        <input type="text" value={feedback.name} onChange={(event) => handleChangeFeedback('name', event.target.value)} placeholder="Nhập tên của bạn" />
-                        <input type="text" value={feedback.email} onChange={(event) => handleChangeFeedback('email', event.target.value)} placeholder="Địa chỉ email" />
-                        <input type="text" value={feedback.phone} onChange={(event) => handleChangeFeedback('phone', event.target.value)} placeholder="Số điện thoại (nếu có)" />
+                        <input className="feedback-input" type="text" value={feedback.name} onChange={(event) => handleChangeFeedback('name', event.target.value)} placeholder="Nhập tên của bạn" />
+                        <input  className="feedback-input" type="text" value={feedback.email} onChange={(event) => handleChangeFeedback('email', event.target.value)} placeholder="Địa chỉ email" />
+                        <input  className="feedback-input" type="text" value={feedback.phone} onChange={(event) => handleChangeFeedback('phone', event.target.value)} placeholder="Số điện thoại (nếu có)" />
                     </div>
                     <div className="feedback-content">
-                        <input type="text" value={feedback.content} onChange={(event) => handleChangeFeedback('content', event.target.value)} placeholder="Số điện thoại (nếu có)" />
+                        <input className="feedback-input__content"  type="text" value={feedback.content} onChange={(event) => handleChangeFeedback('content', event.target.value)} placeholder="Số điện thoại (nếu có)" />
                     </div>
                     <div className="feedback-button">
-                        <button className="feedback-button__button">Gửi đánh giá của bạn</button>
+                        <button className="feedback-button__button">Trả lời</button>
                     </div>
                 </div> : ''}
 

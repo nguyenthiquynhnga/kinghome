@@ -325,19 +325,22 @@ const categoryList = [
         id: 33,
         name: 'Về KINGHOME',
         level: 1,
-        type: 'category',
+        type: 'about',
+        path: 've-kinghome',
         children: [
             {
                 id: 34,
                 name: 'Bảo vệ khách hàng',
                 level: 2,
-                type: 'category'
+                path: 've-kinghome/bao-ve-khach-hang',
+                type: 'about'
             },
             {
                 id: 35,
                 name: 'Ưu đãi và chính sách',
                 level: 2,
-                type: 'category'
+                path:'ve-kinghome/uu-dai-va-chinh-sach',
+                type: 'about'
             }
         ],
         images: [{
@@ -351,7 +354,8 @@ const categoryList = [
         id: 36,
         name: 'BLOG',
         level: 1,
-        type: 'blog'
+        type: 'blog',
+        path:'blog'
     },
     {
         id: 37,

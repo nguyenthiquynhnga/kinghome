@@ -1,0 +1,226 @@
+.hidden-header {
+    display: none;
+}
+
+
+.payment-icon--16 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 52px;
+    height: 28px;
+    transition: opacity .5s cubic-bezier(.3, 0, 0, 1);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    transform: translate(0, 0);
+    background: url('https://bizweb.dktcdn.net/assets/themes_support/payment_icon_vnpay.png') repeat center center;
+}
+
+.checkout-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+    .checkout-left {
+
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        .line {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            height: 1px;
+            background-color: #e6e6e6;
+            width: 70%;
+        }
+
+        .kinghome-note {
+            color: #545454;
+            width: 70%;
+            line-height: 1.4;
+        }
+
+        .kinghome-logo {
+            width: 70%;
+
+            text-align: center;
+        }
+
+        .shipment-detail {
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            // grid-template-columns: auto auto;
+
+
+
+            .shipment-detail__left {
+                margin-right: 30px;
+                flex: 1;
+                max-width: 100%;
+
+            }
+
+            .shipment-detail__right {
+                margin-right: 30px;
+                flex: 1;
+            }
+        }
+    }
+
+    .checkout-right {
+        background-color: #FDE7FF;
+        flex: 4;
+        border: 1px solid black;
+        padding-top: 40px;
+        padding-left: 30px;
+
+        .checkout-right__title {
+            width: 50%;
+            font-size: 20px;
+            font-family: 'SVN-Gilroy Bold';
+            margin-bottom: 40px;
+        }
+
+        .checkout-right__product {
+            width: 50%;
+            display: flex;
+
+            .checkout-product__image {
+                flex: 3;
+                text-align: center;
+            }
+
+            .checkout-product__name {
+                text-align: center;
+                align-items: center;
+                line-height: 1.5;
+                flex: 6;
+            }
+
+            margin-bottom: 40px;
+        }
+
+        .checkout-price {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            color: #fd9707;
+            flex-direction: row;
+            margin-bottom: 30px;
+        }
+
+        .checkout-button {
+
+            .checkout-button__button {
+
+                border: 1px solid #fcb95d;
+                box-sizing: border-box;
+                border-radius: 3px;
+                font-size: 14px;
+                color: #fff;
+                height: 36px;
+                line-height: 36px;
+                padding: 0 17px;
+                width: 180px;
+                background-color: #fd9707;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.shipment-detail__title {
+    font-size: 20px;
+    font-family: 'SVN-Gilroy Bold';
+    margin-bottom: 20px;
+}
+
+.shipment-detail__item {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.shipment-detail__item--input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    background: #fff;
+    border: 1px solid #c4cdd5;
+    border-radius: 5px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 13px;
+    font-family: 'SVN-Gilroy Med';
+    outline: none;
+}
+
+.shipment-detail__item--select {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    background: #fff;
+    border: 1px solid #c4cdd5;
+    border-radius: 5px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 13px;
+    font-family: 'SVN-Gilroy Med';
+    outline: none;
+}
+
+.shipment-detail__item--note {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    background: #fff;
+    border: 1px solid #c4cdd5;
+    border-radius: 5px;
+    height: 100px;
+    line-height: 42px;
+    padding: 0 13px;
+    font-family: 'SVN-Gilroy Med';
+    outline: none;
+}
+
+.shipment-detail__payment-method {
+    border: 1px solid #c4cdd5;
+    box-sizing: border-box;
+    font-family: 'SVN-Gilroy Med';
+    border-radius: 5px;
+}
+
+.shipment-detail__payment-method--item {
+    padding: 20px;
+    border-bottom: 1px solid #c4cdd5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    input {
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    label {
+        cursor: pointer;
+        color: #545454;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        i {
+            margin-left: 20px;
+        }
+    }
+}
+
+.shipment-detail__payment-method--item:last-child {
+    border: none;
+}

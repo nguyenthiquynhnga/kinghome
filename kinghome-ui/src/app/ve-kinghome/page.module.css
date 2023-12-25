@@ -1,0 +1,13 @@
+.main {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    background-color: #FEEEEA;
+}
+
+.content_container {
+    padding: 30px;
+    background-color: #fff;
+    font-family: 'SVN-Gilroy Med';
+    width: 60%;
+}

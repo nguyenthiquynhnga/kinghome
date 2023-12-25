@@ -222,27 +222,10 @@ const data = {
     tag2: 'Kích thước phủ bì',
     value2: 'Dài 212cm x Rộng 136/156/176/196cm x Cao đến đầu giường 92cm',
     note: 'Tiêu chuẩn California Air Resources Board xuất khẩu Mỹ, đảm bảo gỗ không độc hại, an toàn cho sức khỏe',
-    post: `<div class="accordion accordion-line-top" id="special-features">
-    <div>
-    <div class="property-outstanding">
+    post: `
     <h2>
     Đặc tính nổi bật
     </h2>
-    </div>
-    </div>
-    <div class="accordion-panel" style="transition-duration: 0.25s; max-height: 194px;">
-    <div class="px-3 pt-3 pb-1 accordion-caption-wrapper">
-    <div class="accordion-caption">
-    <div>Đặc tính nổi bật</div>
-
-    </div>
-    </div>
-    <div class="accordion-content">
-    <div id="product-dactinh" class="km-hot">
-    <div class="box-km">
-    <h2 class="title_km">
-    </h2>
-    <div class="box-promotion">
     <p>Chất liệu:&nbsp;92% Polyester + 8% Spandex&nbsp;</p>
     <p>Thoải mái hoạt động với chất liệu co giãn</p>
     <p>Sợi Poly bền chắc, thoáng mát, mềm mại</p>
@@ -250,13 +233,7 @@ const data = {
     <p>Dáng baggy sẽ giúp khắc phục những nhược điểm của cơ thể về vòng bụng và đôi chân</p>
     <p>YODY - Look good. Feel good.</p>
     <p>Sản xuất tại Việt Nam</p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="accordion-panel-mobile-fixed-backdrop"></div>
-    </div>`
+    `
 }
 
 const data2 = {
@@ -295,26 +272,10 @@ const data2 = {
     tag2: 'Chất liệu',
     value2: 'Mặt bàn: Gỗ công nghiệp PB chuẩn CARB-P2 (*), Veneer gỗ cao su tự nhiên&Chân bàn: Gỗ cao su tự nhiên&Ghế ăn: Gỗ cao su tự nhiên/Gỗ tần bì tự nhiên, Vải bọc polyester chống nhăn, kháng bụi bẩn và nấm mốc',
     note: 'Tiêu chuẩn California Air Resources Board xuất khẩu Mỹ, đảm bảo gỗ không độc hại, an toàn cho sức khỏe. Chống thấm, cong vênh, trầy xước, mối mọt',
-    post: `<div class="accordion accordion-line-top" id="special-features">
-    <div>
-    <div class="property-outstanding">
+    post: `
     <h2>
     Đặc tính nổi bật
     </h2>
-    </div>
-    </div>
-    <div class="accordion-panel" style="transition-duration: 0.25s; max-height: 194px;">
-    <div class="px-3 pt-3 pb-1 accordion-caption-wrapper">
-    <div class="accordion-caption">
-    <div>Đặc tính nổi bật</div>
-    </div>
-    </div>
-    <div class="accordion-content">
-    <div id="product-dactinh" class="km-hot">
-    <div class="box-km">
-    <h2 class="title_km">
-    </h2>
-    <div class="box-promotion">
     <p>Chất liệu:&nbsp;92% Polyester + 8% Spandex&nbsp;</p>
     <p>Thoải mái hoạt động với chất liệu co giãn</p>
     <p>Sợi Poly bền chắc, thoáng mát, mềm mại</p>
@@ -322,13 +283,7 @@ const data2 = {
     <p>Dáng baggy sẽ giúp khắc phục những nhược điểm của cơ thể về vòng bụng và đôi chân</p>
     <p>YODY - Look good. Feel good.</p>
     <p>Sản xuất tại Việt Nam</p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="accordion-panel-mobile-fixed-backdrop"></div>
-    </div>`
+    `
 
 }
 

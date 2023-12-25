@@ -9,7 +9,8 @@ export interface ICategoryItem {
     post?: string;
     showBanner?: boolean;//xét xem có show banner khi người dùng click chọn danh mục không
     showPost?: boolean;//xét xem có show post khi người dùng click chọn danh mục không;
-    level:number
+    level:number;
+    path?:string;
 }
 
 export interface IImage {

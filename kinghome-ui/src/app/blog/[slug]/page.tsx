@@ -16,7 +16,7 @@ export default async function BlogPage({
     return (
         <main className={styles.main}>
             <div className={styles.content_container}>
-                blog
+                blog detail
             </div>
         </main>
     )

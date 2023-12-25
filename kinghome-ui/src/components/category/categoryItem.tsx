@@ -12,14 +12,14 @@ const CategoryItem: React.FC<CategoryItemProps> = ({ category }) => {
 
   return (
     <li className="category-item1">
-      <Link href={`/${category.id}`}>{category.name}</Link>
+      <Link href={`/${category.path ? category.path: category.id}`}>{category.name}</Link>
       {category.children && category.children.length > 0 ?
         <div className="category-item__children">
           <div className="category-item__left">
             <ul className="category-item__left__ul">
               {category.children && category.children.map((category2) => (
                 <li className="category-item2">
-                  <Link href={`/${category2.id}`}>{category2.name}</Link>
+                  <Link href={`/${category2.path ? category2.path: category2.id}`}>{category2.name}</Link>
                   {category2.children && category2.children.length > 0 ?
                     <ul className="category-item2__children">
                       {

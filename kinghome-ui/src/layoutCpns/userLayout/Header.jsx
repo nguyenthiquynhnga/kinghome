@@ -18,7 +18,10 @@ const Header = () => {
             <div className="main-header-layout__top">
               <div className="main-header-layout__top--layout">
                 <div className="top--logo">
-                  <Image src="https://res.cloudinary.com/drfpegr63/image/upload/v1702563889/logo3_ofplti.png" alt="logo" width={44} height={44} />
+                  <a href="/">
+
+                    <Image src="https://res.cloudinary.com/drfpegr63/image/upload/v1702563889/logo3_ofplti.png" alt="logo" width={44} height={44} />
+                  </a>
                 </div>
                 <div className="search-bar-layout">
                   <div className="search-bar">
@@ -40,7 +43,7 @@ const Header = () => {
                   <CategoryList />
                 </div>
                 <div className="user-setting">
-                  <UserSetting/>
+                  <UserSetting />
                 </div>
               </div>
             </div>

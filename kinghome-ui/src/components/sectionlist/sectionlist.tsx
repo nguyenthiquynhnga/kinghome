@@ -15,11 +15,13 @@ const data: ICategoryItem[] = [
     id: 1,
     name: 'Thiết kế kiến trúc',
     type: 'homepage',
+    level: 1,
     children: [
       {
         id: 2,
         name: 'Thiết kế nhà vườn1',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -29,6 +31,7 @@ const data: ICategoryItem[] = [
         id: 3,
         name: 'Thiết kế nhà vườn2',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -38,6 +41,7 @@ const data: ICategoryItem[] = [
         id: 4,
         name: 'Thiết kế nhà vườn3',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -47,6 +51,7 @@ const data: ICategoryItem[] = [
         id: 5,
         name: 'Thiết kế nhà vườn4',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -56,6 +61,7 @@ const data: ICategoryItem[] = [
         id: 6,
         name: 'Thiết kế nhà vườn5',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -64,6 +70,7 @@ const data: ICategoryItem[] = [
         id: 7,
         name: 'Thiết kế nhà vườn6',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -72,6 +79,7 @@ const data: ICategoryItem[] = [
         id: 8,
         name: 'Thiết kế nhà vườn7',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -80,6 +88,7 @@ const data: ICategoryItem[] = [
         id: 9,
         name: 'Thiết kế nhà vườn8',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -88,6 +97,7 @@ const data: ICategoryItem[] = [
         id: 10,
         name: 'Thiết kế nhà vườn9',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -96,6 +106,7 @@ const data: ICategoryItem[] = [
         id: 11,
         name: 'Thiết kế nhà vườn10',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -106,11 +117,13 @@ const data: ICategoryItem[] = [
     id: 4,
     name: 'Nội thất nhà ở',
     type: 'homepage',
+    level: 1,
     children: [
       {
         id: 3,
         name: 'Phòng bếp1',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -120,6 +133,7 @@ const data: ICategoryItem[] = [
         id: 4,
         name: 'Phòng bếp2',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -129,6 +143,7 @@ const data: ICategoryItem[] = [
         id: 5,
         name: 'Phòng bếp3',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -138,6 +153,7 @@ const data: ICategoryItem[] = [
         id: 6,
         name: 'Phòng bếp4',
         type: 'category',
+        level: 2,
         imageAvatar: {
           url: 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_1_image.png?1702693459815'
         }
@@ -219,51 +235,51 @@ const SectionList = () => {
         </div>
       </div>
       <div className="section-list__bottom">
-          <Slider
-            dots={false}
-            infinite={false}
-            slidesToShow={6}
-            slidesToScroll={6}
-            initialSlide={2}
-            responsive={[
-              {
-                breakpoint: 1300,
-                settings: {
-                  slidesToShow: 4,
-                  slidesToScroll: 4,
-                }
-              },
-              {
-                breakpoint: 1000,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-                  initialSlide: 2
-                }
-              },
-              {
-                breakpoint: 480,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-              }
-            ]}
-          >
+        <Slider
+          dots={false}
+          infinite={false}
+          slidesToShow={6}
+          slidesToScroll={6}
+          initialSlide={2}
+          responsive={[
             {
-              listItemSelected !== null ?
-                listItemSelected?.map((category, index) => (
-                  <div key={category.id} className="section-list__bottom__item" >
-                    <div className="section-list__bottom--image">
-                      <Image src={category.imageAvatar?.url ?? 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_5_image.png?1702693459815'} alt="image" width={90} height={90} />
-                    </div>
-                    <div className="section-list__bottom--name">
-                      <span>{category.name}</span>
-                    </div>
-                  </div>
-                )) : 'Loading...'
+              breakpoint: 1300,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+              }
+            },
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
             }
-          </Slider>
+          ]}
+        >
+          {
+            listItemSelected !== null ?
+              listItemSelected?.map((category, index) => (
+                <div key={category.id} className="section-list__bottom__item" >
+                  <div className="section-list__bottom--image">
+                    <Image src={category.imageAvatar?.url ?? 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_5_image.png?1702693459815'} alt="image" width={90} height={90} />
+                  </div>
+                  <div className="section-list__bottom--name">
+                    <span>{category.name}</span>
+                  </div>
+                </div>
+              )) : 'Loading...'
+          }
+        </Slider>
       </div>
     </div>
   )

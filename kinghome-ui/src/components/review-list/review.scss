@@ -11,6 +11,7 @@
     color: #212b35;
     font-size: 14px;
     font-family: 'SVN-Gilroy Med';
+    margin-bottom: 20px;
 
     .review-list__item__name {
         p {
@@ -38,9 +39,11 @@
             color: #030d78;
             font-size: 14px;
             font-family: 'SVN-Gilroy Med';
+            cursor: pointer;
         }
 
         .option__like {
+            cursor: pointer;
             background: none;
             border: none;
             color: #030d78;
@@ -65,4 +68,64 @@
 
         margin-bottom: 20px;
     }
+}
+
+.feedback-box {
+    width: 100%;
+
+    .feedback-info {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 10px;
+
+        .feedback-input {
+            margin: 0;
+            background: #fff;
+            border: 1px solid #c4cdd5;
+            box-sizing: border-box;
+            border-radius: 5px;
+            height: 42px;
+            line-height: 42px;
+            padding: 0 13px;
+            width: 100%;
+            font-family: 'SVN-Gilroy Med';
+            outline: none;
+        }
+    }
+
+    .feedback-input__content {
+        // width: 100%;
+        margin: 0;
+        background: #fff;
+        border: 1px solid #c4cdd5;
+        box-sizing: border-box;
+        border-radius: 5px;
+        height: 42px;
+        line-height: 42px;
+        padding: 0 13px;
+        width: 100%;
+        font-family: 'SVN-Gilroy Med';
+        outline: none;
+        margin-bottom: 14px;
+    }
+
+    .feedback-button {
+        .feedback-button__button {
+            border: 1px solid #08f;
+            background: #08f;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-size: 14px;
+            color: #fff;
+            height: 36px;
+            line-height: 36px;
+            padding: 0 17px;
+            min-width: 90px;
+            background-color: #030d78;
+            border-color: #030d78;
+            cursor: pointer;
+        }
+    }
+
 }
