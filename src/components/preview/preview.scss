@@ -1,0 +1,40 @@
+.preview-root {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.preview-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    .preview-item {
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+
+        .preview-item__title {
+            font-size: 16px;
+            color: #11006F;
+            font-family: 'SVN-Gilroy Med';
+        }
+
+        .preview-item__content {
+            display: grid;
+            grid-template-columns: 16% 84%;
+            .preview-item__banner {
+            }
+
+            .preview-item__list-product {
+                .preview__product-item {
+                    padding: 10px;
+                    // width: 300px !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+            }
+        }
+    }
+}
