@@ -74,7 +74,7 @@ const CategoryDetail: React.FC<CategoryDetailProps> = ({ data }) => {
                         <span >Sắp xếp theo </span>
                         <div className="product-list__soft__wrapper">
                             <span>{typeSort}</span>
-                            <ul className="product-list__soft__list" hidden>
+                            <ul className="product-list__soft__list">
                                 <li className={`product-list__soft__item ${typeSort === "Mặc định" ? "active" : ''}`} onClick={() => handleClickTypeSort('Mặc định')}><span>Mặc định</span></li>
                                 <li className={`product-list__soft__item ${typeSort === 'Giá tăng dần' ? "active" : ''}`} onClick={() => handleClickTypeSort('Giá tăng dần')}><span>Giá tăng dần</span></li>
                                 <li className={`product-list__soft__item ${typeSort === 'Giá giảm dần' ? "active" : ''}`} onClick={() => handleClickTypeSort('Giá giảm dần')}><span>Giá giảm dần</span></li>

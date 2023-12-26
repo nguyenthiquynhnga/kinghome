@@ -59,6 +59,7 @@
             }
 
             .product-list__soft__list {
+                display: none;
                 background: #fff;
                 border: 1px solid #DDE1EF;
                 padding: 0 15px;
@@ -83,17 +84,17 @@
                     background-size: 16px;
                 }
             }
+            &:hover .product-list__soft__list {
+                display: block;
+                position: absolute;
+                top: 100%;
+                width: 200px;
+            }
         }
 
     }
 }
 
-.product-list__soft__wrapper:hover .product-list__soft__list {
-    display: block;
-    position: absolute;
-    top: 100%;
-    width: 200px;
-}
 
 .product-list__content {
     margin-top: 20px;

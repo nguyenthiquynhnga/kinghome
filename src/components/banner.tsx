@@ -25,12 +25,12 @@ function Banner() {
             layout="responsive"
           />
         </Link>
-        
+
       </div>
       <button
-          className="modalbanner__button-close"
-          onClick={toggle}
-        ><CancelIcon /></button>
+        className="modalbanner__button-close"
+        onClick={toggle}
+      ><CancelIcon /></button>
     </div>
   );
 }
