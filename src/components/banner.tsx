@@ -20,8 +20,9 @@ function Banner() {
             className="modalbanner__image"
             src="https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/bannertop.jpg?1702715842996"
             alt='banner'
-            width={window.innerWidth}
+            width={100}
             height={35}
+            layout="responsive"
           />
         </Link>
         

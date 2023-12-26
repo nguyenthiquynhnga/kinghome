@@ -10,11 +10,11 @@ export async function generateMetadata(
     title: "KINGHOME - Thiết kế và xây dựng nội thất",
     referrer: "no-referrer-when-downgrade",
     description: "Tiện lợi mua sắm hàng triệu mặt hàng, dịch vụ. Vô vàn ưu đãi freeship, mã giảm giá. Hoàn tiền 15% tối đa 600k/tháng với thẻ tín dụng TikiCARD.",
-    openGraph: {
-      title: "KINGHOME - Thiết kế và xây dựng nội thất",
-      description: "Tiện lợi mua sắm hàng triệu mặt hàng, dịch vụ. Vô vàn ưu đãi freeship, mã giảm giá. Hoàn tiền 15% tối đa 600k/tháng với thẻ tín dụng TikiCARD.",
+    // openGraph: {
+    //   title: "KINGHOME - Thiết kế và xây dựng nội thất",
+    //   description: "Tiện lợi mua sắm hàng triệu mặt hàng, dịch vụ. Vô vàn ưu đãi freeship, mã giảm giá. Hoàn tiền 15% tối đa 600k/tháng với thẻ tín dụng TikiCARD.",
 
-    },
+    // },
   }
 }
 
