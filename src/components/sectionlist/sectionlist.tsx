@@ -9,6 +9,7 @@ import "./sectionlist.scss"
 // import AliceCarousel from 'react-alice-carousel';
 // import "react-alice-carousel/lib/alice-carousel.css";
 import Slider from "react-slick";
+import Link from "next/link";
 
 const data: ICategoryItem[] = [
   {
@@ -270,12 +271,14 @@ const SectionList = () => {
             listItemSelected !== null ?
               listItemSelected?.map((category, index) => (
                 <div key={category.id} className="section-list__bottom__item" >
+                  <Link href={`/${category.id}`}>
                   <div className="section-list__bottom--image">
                     <Image src={category.imageAvatar?.url ?? 'https://bizweb.dktcdn.net/100/438/408/themes/931909/assets/home_danhmuc_1_child_5_image.png?1702693459815'} alt="image" width={90} height={90} />
                   </div>
                   <div className="section-list__bottom--name">
                     <span>{category.name}</span>
                   </div>
+                  </Link>
                 </div>
               )) : 'Loading...'
           }

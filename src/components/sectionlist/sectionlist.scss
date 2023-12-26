@@ -51,7 +51,9 @@
 .section-list__bottom__item {
     cursor: pointer;
     transition: all .3s;
-
+    a {
+        text-decoration: none;
+    }
     &:hover {
         transform: scale(1.1);
 

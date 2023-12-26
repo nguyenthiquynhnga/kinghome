@@ -18,7 +18,7 @@ const Preview = () => {
           <div className="preview-item" key={index}>
             <div className="preview-item__title"><p>{preview.title}</p></div>
             <div className="preview-item__content">
-              <div className="preview-item__banner"><Image alt="image" src={preview.banner.url} height={416} width={190} /></div>
+              <div className="preview-item__banner"><Image alt="image" src={preview.banner.url} height={416} width={190} layout="responsive"/></div>
               <div className="preview-item__list-product">
                 <Slider
                   dots={false}
