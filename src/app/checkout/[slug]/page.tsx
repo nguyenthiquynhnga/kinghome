@@ -70,7 +70,7 @@ const Checkout: React.FC<Props> = ({ params }) => {
       <div className="checkout-wrapper">
         <div className="checkout-left">
           <div className="kinghome-logo">
-            <a href="/">
+            <a href="/kinghome">
 
               <Image src="https://res.cloudinary.com/drfpegr63/image/upload/v1702563889/logo3_ofplti.png" alt="logo" width={100} height={100} />
             </a>
